@@ -35,3 +35,17 @@ Come to the modification page: https://github.com/soulhotel/FF-ULTIMA/blob/main/
 
 @import url(theme/override-linux.css);
 @import url(theme/override-styles.css);
+
+/** Custom stuff */
+
+/** hide window buttons */
+.titlebar-buttonbox-container { display: none; }
+#nav-bar { margin-right: 0 ; }
+
+/**
+ * remove annoying padding above tab content (the last 2 rules add a
+ * 6px margin between the url bar and the tabs/tab content)
+ */
+#titlebar { height: 0 !important; }
+#main-window #tabbrowser-tabpanels browser[type] { margin-top: 6px !important; }
+#main-window:not([lwtheme]) #TabsToolbar-customization-target { margin-top: 6px !important; }

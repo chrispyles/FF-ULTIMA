@@ -216,6 +216,11 @@ body {background: var(--toolbar-bgcolor) !important;}
   border: 1px solid var(--uc-text) !important;
 }
 
+/*--individual tab text color--*/
+#main-window:not([lwtheme]) .tabbrowser-tab {
+  color: var(--uc-light) !important;
+}
+
 /*------------------URL bar----------------*/
 
 #main-window:not([lwtheme]) #urlbar:is([focused="true"], [open]) > #urlbar-background, #searchbar:focus-within {
@@ -367,7 +372,7 @@ body {background: var(--toolbar-bgcolor) !important;}
 #main-window[lwtheme="true"] 
   {--tab-selected-bgcolor: var(--lwt-accent-color) !important;}
 
-.tabbrowser-tab[pending="true"] {opacity: 0.3 !important;}
+.tabbrowser-tab[pending="true"] {opacity: 1 !important;}
 
 /*-------------------------------------------------------------------------------*/
 /*----------------------------------extra----------------------------------------*/
